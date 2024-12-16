@@ -23,12 +23,12 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="DataRace">
 <meta property="og:url" content="http://example.com/2024/12/16/DataRace/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="飞扬的世界">
 <meta property="og:description" content="Data RaceData race案例目前有变量int64 a，暂用64位，即8字节。 存在T1和T2两个线程同时对a进行W写操作，即W1(a)和W2(a)，且没有使用原子操作和加锁机制。 假设写操作可分为W(a-l32)和W(a-h32)两条指令，分别对应写变量a的低32位和高32位。 则目前存在四条指令分别是W1(a-l32)，W1(a-h32)，W2(a-l32)，W2(a-h32)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-12-16T13:58:03.000Z">
 <meta property="article:modified_time" content="2024-12-16T14:10:55.823Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Spring Yang">
 <meta name="twitter:card" content="summary">
 
 
@@ -38,7 +38,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/12/16/DataRace/","path":"2024/12/16/DataRace/","title":"DataRace"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>DataRace | Hexo</title>
+<title>DataRace | 飞扬的世界</title>
   
 
 
@@ -68,7 +68,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <p class="site-title">Hexo</p>
+      <p class="site-title">飞扬的世界</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -109,7 +109,7 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+  <p class="site-author-name" itemprop="name">Spring Yang</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap animated">
@@ -148,16 +148,16 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Spring Yang">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="飞扬的世界">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="DataRace | Hexo">
+      <meta itemprop="name" content="DataRace | 飞扬的世界">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
@@ -317,7 +317,7 @@ W1(a-h32)                           R2(a-l32)             R1(a-h32)             
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
-    <span class="author" itemprop="copyrightHolder">John Doe</span>
+    <span class="author" itemprop="copyrightHolder">Spring Yang</span>
   </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
